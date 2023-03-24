@@ -1,27 +1,39 @@
 
 class Piece:
+    # Pieces default to white pawns if not specified
     def __init__(self, color="White",  pos="A1", name="Pn", val=1):
         self.name = name
         self.value = val
         self.color = color
-        self.position = [pos]
-    
+        self.position = pos
+
+    # ------------------------------   
+    # Names and assigns values for knights
     def knight(self):
         self.name = "Kn"
         self.value = 3
- 
+
+    
+    # ------------------------------
+    # Names and assigns values for rooks
     def rook(self):
         self.name = "Rk"
         self.value = 6
     
+    # ------------------------------
+    # Names and assigns values for queens
     def queen(self):
         self.name = "Qu"
         self.value = 9
 
+    # ------------------------------
+    # Names and assigns values for kings
     def king(self):
         self.name = "Kg"
         self.value = 10
 
+# ----------------------------------------
+# Bishop class since there are dark and light squared bishops
 class Bishops(Piece):
     def __init__(self, sqColor="Dark", color="White", pos="A1", name="Pn", val=1):
         super().__init__(color, pos, name, val)
@@ -30,6 +42,8 @@ class Bishops(Piece):
         self.color = color
         self.sColor = sqColor
 
+    # ------------------------------
+    # Names and assigns values for bishops
     def Bishop(self):
         if self.position == "C3" or "C8":
             self.name = "Bi"
@@ -39,17 +53,19 @@ class Bishops(Piece):
             self.name = "Bi"
             self.value = 3
             self.sColor = "Light"
- 
+
+# ---------------------------------------- 
 pieces = []
 files = ["A", "B", "C", "D", "E", "F", "G", "H"]
 ranks = [1, 2, 3, 4, 5, 6, 7, 8]
+
 # Creating white and black pawns
 for file in files:
     wPawn = Piece("White", file + str(ranks[1]))
     bPawn = Piece("White", file + str(ranks[6]))
     pieces.append(wPawn)
     pieces.append(bPawn)
-
+# ------------------------------
 # Creating white and black knights
 for file in files:
     if file == "B":
@@ -68,7 +84,7 @@ for file in files:
         pieces.append(wKnight)
         pieces.append(bKnight)
 
-   
+# ------------------------------   
 # Creating white and black rooks
 for file in files:
     if file == "A":
@@ -86,6 +102,7 @@ for file in files:
         pieces.append(wRook)
         pieces.append(bRook)
 
+# ------------------------------
 # Creating white and black bishops
 for file in files:
     if file == "C":
@@ -103,6 +120,7 @@ for file in files:
         pieces.append(wBishop)
         pieces.append(bBishop)
 
+# ------------------------------
 # Creating white and black kings and queens
 for file in files:
     if file == "D":
@@ -119,9 +137,3 @@ for file in files:
         bKing.king()
         pieces.append(wKing)
         pieces.append(bKing)
-
-for i in pieces:
-    print(i.name, i.color, i.position)
-
-
-        

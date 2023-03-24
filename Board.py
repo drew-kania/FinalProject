@@ -1,6 +1,9 @@
+# Term color import to visually separate light and dark squares
+from termcolor import colored
+
 # Chess board class
 class ChessBoard:
-    
+
     def __init__(self, board=[]):
         self.board = board
 
@@ -23,9 +26,30 @@ class ChessBoard:
     # ------------------------------
     # Prints board to the console by row
     def print_board(self):
+        rank = 0
+        # iterates throught every square and colors the correct ones before printing
         for row in self.board:
-            print(row)
+            rank += 1
+            file = 0
+            print()
+            # --------------------
+            for square in row:
+                file += 1
+                if rank % 2 == 0:
+                    if file % 2 == 0:
+                        print(square, end=" ")
+                    # --------------------
+                    else:
+                        print(colored(square, "green"), end=" ")
+                # --------------------       
+                elif rank % 2 != 0:
+                    if file % 2 != 0:
+                        print(square, end=" ")
+                    # --------------------
+                    else:
+                        print(colored(square, "green"), end=" ")
+        print()
+                        
 
-b = ChessBoard()
-b.create_board()
-b.print_board()
+game_board = ChessBoard()
+game_board.create_board()
