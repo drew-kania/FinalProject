@@ -1,16 +1,19 @@
 import tkinter as tk
 
+
+# Create a new window
 root = tk.Tk()
 root.geometry("800x800")
 
-# board canvas
+# Create a canvas to draw the board on
 canvas = tk.Canvas(root, width=800, height=800)
 canvas.pack()
 
+# Define the colors for the light and dark squares
 light_color = "white"
 dark_color = "green"
 
-# Create the squares on the board, 100x100 each
+# Create the squares on the board
 for x in range(8):
     for y in range(8):
         x1 = x * 100
@@ -23,4 +26,57 @@ for x in range(8):
             canvas.create_rectangle(x1, y1, x2, y2, fill=dark_color)
 
 
+image_file = "piece_images_small2/bishopblack.png"
+image = tk.PhotoImage(file=image_file)
+
+# Create the button and set its text to the image
+button = tk.Button(root, image=image, borderwidth=0, highlightthickness=0)
+button.place(x=325, y=25)
+
+wpawn = tk.PhotoImage(file="piece_images_small2/pawnwhite.png")
+wPawn1 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn1.place(x=25, y=625)
+wPawn2 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn2.place(x=125, y=625)
+wPawn3 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn3.place(x=225, y=625)
+wPawn4 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn4.place(x=325, y=625)
+wPawn5 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn5.place(x=425, y=625)
+wPawn6 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn6.place(x=525, y=625)
+wPawn7 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn7.place(x=625, y=625)
+wPawn8 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0)
+wPawn8.place(x=725, y=625)
+
+wrook = tk.PhotoImage(file="piece_images_small2/rookwhite.png")
+wRook1 = tk.Button(root, image=wrook, borderwidth=0, highlightthickness=0)
+wRook1.place(x=25, y=725)
+wRook2 = tk.Button(root, image=wrook, borderwidth=0, highlightthickness=0)
+wRook2.place(x=725, y=725)
+
+wbishop = tk.PhotoImage(file="piece_images_small2/bishopwhite.png")
+wBishop1 = tk.Button(root, image=wbishop, borderwidth=0, highlightthickness=0)
+wBishop1.place(x=225, y=725)
+wBishop2 = tk.Button(root, image=wbishop, borderwidth=0, highlightthickness=0)
+wBishop2.place(x=525, y=725)
+
+wknight = tk.PhotoImage(file="piece_images_small2/knightwhite.png")
+wKnight1 = tk.Button(root, image=wknight, borderwidth=0, highlightthickness=0)
+wKnight1.place(x=125, y=725)
+wKnight2 = tk.Button(root, image=wknight, borderwidth=0, highlightthickness=0)
+wKnight2.place(x=625, y=725)
+
+wqueen = tk.PhotoImage(file="piece_images_small2/queenwhite.png")
+wQueen = tk.Button(root, image=wqueen, borderwidth=0, highlightthickness=0)
+wQueen.place(x=325, y=725)
+
+wking = tk.PhotoImage(file="piece_images_small2/kingwhite.png")
+wKing = tk.Button(root, image=wking, borderwidth=0, highlightthickness=0)
+wKing.place(x=425, y=725)
+
+
+# Start the main event loop
 root.mainloop()
