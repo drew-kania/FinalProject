@@ -7,33 +7,16 @@ class Piece:
         self.color = color
         self.position = pos
 
-    # ------------------------------   
-    # Names and assigns values for knights
+
+class Knight(Piece):
+    def __init__(self, color="White", pos="A1", name="Kn", val=3):
+        super().__init__(color, pos, name, val)
+
     def knight(self):
         self.name = "Kn"
         self.value = 3
 
-    
-    # ------------------------------
-    # Names and assigns values for rooks
-    def rook(self):
-        self.name = "Rk"
-        self.value = 6
-    
-    # ------------------------------
-    # Names and assigns values for queens
-    def queen(self):
-        self.name = "Qu"
-        self.value = 9
-
-    # ------------------------------
-    # Names and assigns values for kings
-    def king(self):
-        self.name = "Kg"
-        self.value = 10
-
 # ----------------------------------------
-# Bishop class since there are dark and light squared bishops
 class Bishops(Piece):
     def __init__(self, sqColor="Dark", color="White", pos="A1", name="Pn", val=1):
         super().__init__(color, pos, name, val)
@@ -54,6 +37,32 @@ class Bishops(Piece):
             self.value = 3
             self.sColor = "Light"
 
+class Queen(Piece):
+    def __init__(self, color="White", pos="A1", name="Qu", val=9):
+        super().__init__(color, pos, name, val)
+    
+    def queen(self):
+        self.name = "Qu"
+        self.value = 9
+
+class Rook(Piece):
+    def __init__(self, color="White", pos="A1", name="Rk", val=6):
+        super().__init__(color, pos, name, val)
+
+    def rook(self):
+        self.name = "Rk"
+        self.value = 6
+
+class King(Piece):
+    def __init__(self, color="White", pos="A1", name="Kg", val=1):
+        super().__init__(color, pos, name, val)
+    
+    def king(self):
+        self.name = "Kg"
+        self.value = 10
+
+    
+
 # ---------------------------------------- 
 pieces = []
 files = ["A", "B", "C", "D", "E", "F", "G", "H"]
@@ -69,16 +78,16 @@ for file in files:
 # Creating white and black knights
 for file in files:
     if file == "B":
-        wKnight = Piece("White", file + str(ranks[0]))
-        bKnight = Piece("Black", file + str(ranks[7]))
+        wKnight = Knight("White", file + str(ranks[0]))
+        bKnight = Knight("Black", file + str(ranks[7]))
         wKnight.knight()
         bKnight.knight()
         pieces.append(wKnight)
         pieces.append(bKnight)
 
     if file == "G":
-        wKnight = Piece("White", file + str(ranks[0]))
-        bKnight = Piece("Black", file + str(ranks[7]))
+        wKnight = Knight("White", file + str(ranks[0]))
+        bKnight = Knight("Black", file + str(ranks[7]))
         wKnight.knight()
         bKnight.knight()
         pieces.append(wKnight)
@@ -88,15 +97,15 @@ for file in files:
 # Creating white and black rooks
 for file in files:
     if file == "A":
-        wRook = Piece("White", file + str(ranks[0]))
-        bRook = Piece("Black", file + str(ranks[7]))
+        wRook = Rook("White", file + str(ranks[0]))
+        bRook = Rook("Black", file + str(ranks[7]))
         wRook.rook()
         bRook.rook()
         pieces.append(wRook)
         pieces.append(bRook)
     if file == "H":
-        wRook = Piece("White", file + str(ranks[0]))
-        bRook = Piece("Black", file + str(ranks[7]))
+        wRook = Rook("White", file + str(ranks[0]))
+        bRook = Rook("Black", file + str(ranks[7]))
         wRook.rook()
         bRook.rook()
         pieces.append(wRook)
@@ -124,15 +133,15 @@ for file in files:
 # Creating white and black kings and queens
 for file in files:
     if file == "D":
-        wQueen = Piece("White", file + str(ranks[0]))
-        bQueen = Piece("Black", file + str(ranks[7]))  
+        wQueen = Queen("White", file + str(ranks[0]))
+        bQueen = Queen("Black", file + str(ranks[7]))  
         wQueen.queen()
         bQueen.queen()
         pieces.append(wQueen)
         pieces.append(bQueen)
     elif file == "E":
-        wKing = Piece("White", file + str(ranks[0]))
-        bKing = Piece("Black", file + str(ranks[7]))
+        wKing = King("White", file + str(ranks[0]))
+        bKing = King("Black", file + str(ranks[7]))
         wKing.king()
         bKing.king()
         pieces.append(wKing)
