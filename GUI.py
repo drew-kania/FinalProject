@@ -176,6 +176,142 @@ g3.place(x=600, y=500)
 g4.place(x=600, y=400)
 h3.place(x=700, y=500)
 h4.place(x=700, y=400)
+a5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+a5.place(x=0, y=300)
+
+a6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+a6.place(x=0, y=200)
+
+a7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#a7.place(x=, y=)
+
+a8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#a8.place(x=, y=)
+
+# The B's
+b5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+b5.place(x=100, y=300)
+
+b6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+b6.place(x=100, y=200)
+
+b7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#b7.place(x=, y=)
+
+b8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#b8.place(x=, y=)
+
+# The C's
+c5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+c5.place(x=200, y=300)
+
+c6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+c6.place(x=200, y=200)
+
+c7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#c7.place(x=, y=)
+
+c8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#c8.place(x=, y=)
+
+# The D's
+d5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+d5.place(x=300, y=300)
+
+d6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+d6.place(x=300, y=200)
+
+d7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#d7.place(x=, y=)
+
+d8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#d8.place(x=, y=)
+
+# The E's
+e5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+e5.place(x=400, y=300)
+
+e6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+e6.place(x=400, y=200)
+
+e7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#e7.place(x=, y=)
+
+e8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#e8.place(x=, y=)
+
+# The F's
+f5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+f5.place(x=500, y=300)
+
+f6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+f6.place(x=500, y=200)
+
+f7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#f7.place(x=, y=)
+
+f8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#f8.place(x=, y=)
+
+# The G's
+g5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+g5.place(x=600, y=300)
+
+g6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+g6.place(x=600, y=200)
+
+g7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#g7.place(x=, y=)
+
+g8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#g8.place(x=, y=)
+
+# The H's
+h5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+h5.place(x=700, y=300)
+
+h6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+h6.place(x=700, y=200)
+
+h7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=light_color, bg=light_color)
+#h7.place(x=, y=)
+
+h8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+#h8.place(x=, y=)
+
+
 
 # Start the main event loop
 root.mainloop()
