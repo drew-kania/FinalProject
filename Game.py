@@ -13,6 +13,7 @@ def get_start_position(piece_position, board):
     for rank in board:
         for position in rank:
             if piece_position == position:
+                # Returns position by finding the rank of the piece(row) followed by the file(column)
                 return board.index(rank), rank.index(position)
             
 # ------------------------------
