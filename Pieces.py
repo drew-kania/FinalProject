@@ -24,6 +24,7 @@ class Knight(Piece):
         self.file = "A"
         self.possible_moves = []
         self.actual_moves = []
+
     # --------------------
     def knight(self):
         self.name = "Kn"
@@ -36,13 +37,10 @@ class Knight(Piece):
         for i in self.position:
             if i in files:
                 self.file = i
-            elif i in ranks:
+            if i in ranks:
                 self.rank = i
         self.find_move()
-        
 
-        
-       
     # --------------------
     # Finds all possible moves and filters illegal moves
     def find_move(self):
@@ -52,7 +50,7 @@ class Knight(Piece):
         # checks if moves are within the list index for the ranks and files
         for v, h in all_moves:
             r, f = r+v, f+h
-            if 0 <= r >= 7 and 0 <= f >= 7:
+            if 0 <= r <= 7 and 0 <= f <= 7:
                 self.possible_moves.append((r, f))
         # checks if the possible move has its own colored piece in that location
         for rank, file in self.possible_moves:
@@ -92,7 +90,7 @@ class Bishops(Piece):
         for i in self.position:
             if i in files:
                 self.file = i
-            elif i in ranks:
+            if i in ranks:
                 self.rank = i
 
     def find_move(self):
@@ -108,7 +106,7 @@ class Bishops(Piece):
         for rank, file in self.possible_moves:
             for piece in pieces:
                 if piece.pos == ranks[rank] + files[file]:
-                    
+
                     if piece.color == self.color:
                         self.actual_moves.append(ranks[rank] + files[file])
         
