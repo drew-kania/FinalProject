@@ -21,9 +21,9 @@ for x in range(8):
         x2 = x1 + 100
         y2 = y1 + 100
         if (x + y) % 2 == 0:
-            canvas.create_rectangle(x1, y1, x2, y2, fill=light_color)
-        else:
             canvas.create_rectangle(x1, y1, x2, y2, fill=dark_color)
+        else:
+            canvas.create_rectangle(x1, y1, x2, y2, fill=light_color)
 
 
 image_file = "piece_images_small2/bishopblack.png"
@@ -128,11 +128,37 @@ bPawn8 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
 bPawn8.place(x=725, y=125)
 
 
-a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color)
-a1.place(x=200, y=500)
-
-
-
+a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+a2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+a3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+a4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+b1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+b2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+b3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+b4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+c1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+c2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+c3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+c4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+d1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+d2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+d3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+d4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+e1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+e2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+e3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+e4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+f1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+f2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+f3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+f4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+g1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+g2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+g3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+g4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+h1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+h2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
+h3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color)
+h4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color)
 # Start the main event loop
 root.mainloop()
