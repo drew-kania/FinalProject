@@ -77,6 +77,57 @@ wking = tk.PhotoImage(file="piece_images_small2/kingwhite.png")
 wKing = tk.Button(root, image=wking, borderwidth=0, highlightthickness=0)
 wKing.place(x=425, y=725)
 
+# Black Bishops
+bbishop = tk.PhotoImage(file="piece_images_small2/bishopblack.png")
+bBishop1 = tk.Button(root, image=bbishop, borderwidth=0, highlightthickness=0)
+bBishop1.place(x=225, y=25)
+bBishop2 = tk.Button(root, image=bbishop, borderwidth=0, highlightthickness=0)
+bBishop2.place(x=525, y=25)
+
+# Black Knights
+bknight = tk.PhotoImage(file="piece_images_small2/knightblack.png")
+bKnight1 = tk.Button(root, image=bknight, borderwidth=0, highlightthickness=0)
+bKnight1.place(x=125, y=25)
+bKnight2 = tk.Button(root, image=bknight, borderwidth=0, highlightthickness=0)
+bKnight2.place(x=625, y=25)
+
+# Black Rooks
+brook = tk.PhotoImage(file="piece_images_small2/rookblack.png")
+bRook1 = tk.Button(root, image=brook, borderwidth=0, highlightthickness=0)
+bRook1.place(x=25, y=25)
+bRook2 = tk.Button(root, image=brook, borderwidth=0, highlightthickness=0)
+bRook2.place(x=725, y=25)
+
+# Black King
+bking = tk.PhotoImage(file="piece_images_small2/kingblack.png")
+bKing = tk.Button(root, image=bking, borderwidth=0, highlightthickness=0)
+bKing.place(x=425, y=25)
+
+# Black Queen
+bqueen = tk.PhotoImage(file="piece_images_small2/queenwhite.png")
+bQueen = tk.Button(root, image=bqueen, borderwidth=0, highlightthickness=0)
+bQueen.place(x=325, y=25)
+
+# Black Pawns
+bpawn = tk.PhotoImage(file="piece_images_small2/pawnblack1.png")
+bPawn1 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn1.place(x=25, y=125)
+bPawn2 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn2.place(x=125, y=125)
+bPawn3 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn3.place(x=225, y=125)
+bPawn4 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn4.place(x=325, y=125)
+bPawn5 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn5.place(x=425, y=125)
+bPawn6 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn6.place(x=525, y=125)
+bPawn7 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn7.place(x=625, y=125)
+bPawn8 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0)
+bPawn8.place(x=725, y=125)
+
+
 a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
                height=6, fg=dark_color, bg=dark_color)
 a1.place(x=200, y=500)
