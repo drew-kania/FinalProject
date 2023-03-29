@@ -77,6 +77,11 @@ wking = tk.PhotoImage(file="piece_images_small2/kingwhite.png")
 wKing = tk.Button(root, image=wking, borderwidth=0, highlightthickness=0)
 wKing.place(x=425, y=725)
 
+a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
+               height=6, fg=dark_color, bg=dark_color)
+a1.place(x=200, y=500)
+
+
 
 # Start the main event loop
 root.mainloop()
