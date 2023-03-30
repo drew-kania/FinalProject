@@ -69,10 +69,7 @@ for x in range(8):
 image_file = "piece_images_small2/bishopblack.png"
 image = tk.PhotoImage(file=image_file)
 
-# Create the button and set its text to the image
-button = tk.Button(root, image=image, borderwidth=0, highlightthickness=0)
-button.place(x=325, y=25)
-
+# Create the button and set its text to the image of the piece
 wpawn = tk.PhotoImage(file="piece_images_small2/pawnwhite.png")
 wPawn1 = tk.Button(root, image=wpawn, borderwidth=0, highlightthickness=0, command=lambda: Pawn([625,25], 0))
 wPawn1.place(x=25, y=625)
@@ -184,39 +181,39 @@ bPawn8 = tk.Button(root, image=bpawn, borderwidth=0, highlightthickness=0, comma
 bPawn8.place(x=725, y=125)
 
 
-
-a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="a1", old_coordinate=[700, 0]))
-a2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="a2", old_coordinate=[600, 0]))
-a3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="a3", old_coordinate=[500, 0]))
-a4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="a4", old_coordinate=[400, 0]))
-b1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="b1", old_coordinate=[700, 10]))
-b2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="b2", old_coordinate=[600, 100]))
-b3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="b3", old_coordinate=[500, 100]))
-b4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="b4", old_coordinate=[400, 100]))
-c1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="c1", old_coordinate=[700, 200]))
-c2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="c2", old_coordinate=[600, 200]))
-c3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="c3", old_coordinate=[500, 200]))
-c4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="c4", old_coordinate=[400, 200]))
-d1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="d1", old_coordinate=[700, 300]))
-d2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="d2", old_coordinate=[600, 300]))
-d3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="d3", old_coordinate=[500, 300]))
-d4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="d4", old_coordinate=[400, 300]))
-e1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="e1", old_coordinate=[700, 400]))
-e2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="e2", old_coordinate=[600, 400]))
-e3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="e3", old_coordinate=[500, 400]))
-e4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="e4", old_coordinate=[400, 400]))
-f1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="f1", old_coordinate=[700, 500]))
-f2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="f2", old_coordinate=[600, 500]))
-f3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="f3", old_coordinate=[500, 500]))
-f4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="f4", old_coordinate=[400, 500]))
-g1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g1", old_coordinate=[700, 600]))
-g2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g2", old_coordinate=[600, 600]))
-g3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g3", old_coordinate=[500, 600]))
-g4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g4", old_coordinate=[400, 600]))
-h1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g1", old_coordinate=[700, 700]))
-h2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g1", old_coordinate=[600, 700]))
-h3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g1", old_coordinate=[500, 700]))
-h4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g1", old_coordinate=[400, 700]))
+# Set up buttons for spaces
+a1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="a1", old_coordinate=[700, 0]))
+a2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="a2", old_coordinate=[600, 0]))
+a3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="a3", old_coordinate=[500, 0]))
+a4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="a4", old_coordinate=[400, 0]))
+b1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="b1", old_coordinate=[700, 10]))
+b2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="b2", old_coordinate=[600, 100]))
+b3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="b3", old_coordinate=[500, 100]))
+b4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="b4", old_coordinate=[400, 100]))
+c1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="c1", old_coordinate=[700, 200]))
+c2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="c2", old_coordinate=[600, 200]))
+c3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="c3", old_coordinate=[500, 200]))
+c4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="c4", old_coordinate=[400, 200]))
+d1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="d1", old_coordinate=[700, 300]))
+d2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="d2", old_coordinate=[600, 300]))
+d3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="d3", old_coordinate=[500, 300]))
+d4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="d4", old_coordinate=[400, 300]))
+e1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="e1", old_coordinate=[700, 400]))
+e2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="e2", old_coordinate=[600, 400]))
+e3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="e3", old_coordinate=[500, 400]))
+e4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="e4", old_coordinate=[400, 400]))
+f1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="f1", old_coordinate=[700, 500]))
+f2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="f2", old_coordinate=[600, 500]))
+f3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="f3", old_coordinate=[500, 500]))
+f4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="f4", old_coordinate=[400, 500]))
+g1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g1", old_coordinate=[700, 600]))
+g2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g2", old_coordinate=[600, 600]))
+g3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g3", old_coordinate=[500, 600]))
+g4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g4", old_coordinate=[400, 600]))
+h1 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g1", old_coordinate=[700, 700]))
+h2 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g1", old_coordinate=[600, 700]))
+h3 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=dark_color, command=lambda: Square(coordinate="g1", old_coordinate=[500, 700]))
+h4 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8, height=6, bg=light_color, command=lambda: Square(coordinate="g1", old_coordinate=[400, 700]))
 a3.place(x=0, y=500)
 a4.place(x=0, y=400)
 b3.place(x=100, y=500)
@@ -238,121 +235,121 @@ h4.place(x=700, y=400)
 # Second Half
 # The A's
 a5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="a5", old_coordinate=[300, 0]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="a5", old_coordinate=[300, 0]))
 a5.place(x=0, y=300)
 a6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="a6", old_coordinate=[200, 0]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="a6", old_coordinate=[200, 0]))
 a6.place(x=0, y=200)
 a7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="a7", old_coordinate=[100, 0]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="a7", old_coordinate=[100, 0]))
 #a7.place(x=, y=)
 a8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="a8", old_coordinate=[0, 0]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="a8", old_coordinate=[0, 0]))
 #a8.place(x=, y=)
 
 
 # The B's
 b5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="b5", old_coordinate=[300, 100]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="b5", old_coordinate=[300, 100]))
 b5.place(x=100, y=300)
 b6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="b6", old_coordinate=[200, 100]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="b6", old_coordinate=[200, 100]))
 b6.place(x=100, y=200)
 b7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="b7", old_coordinate=[100, 100]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="b7", old_coordinate=[100, 100]))
 #b7.place(x=, y=)
 b8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="b8", old_coordinate=[0, 100]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="b8", old_coordinate=[0, 100]))
 #b8.place(x=, y=)
 
 
 # The C's
 c5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="c5", old_coordinate=[300, 200]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="c5", old_coordinate=[300, 200]))
 c5.place(x=200, y=300)
 c6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="c6", old_coordinate=[200, 200]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="c6", old_coordinate=[200, 200]))
 c6.place(x=200, y=200)
 c7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="c7", old_coordinate=[100, 200]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="c7", old_coordinate=[100, 200]))
 #c7.place(x=, y=)
 c8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="c8", old_coordinate=[0, 200]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="c8", old_coordinate=[0, 200]))
 #c8.place(x=, y=)
 
 
 # The D's
 d5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="d5", old_coordinate=[300, 300]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="d5", old_coordinate=[300, 300]))
 d5.place(x=300, y=300)
 d6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="d6", old_coordinate=[200, 300]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="d6", old_coordinate=[200, 300]))
 d6.place(x=300, y=200)
 d7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="d7", old_coordinate=[100, 300]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="d7", old_coordinate=[100, 300]))
 #d7.place(x=, y=)
 d8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="d8", old_coordinate=[0, 300]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="d8", old_coordinate=[0, 300]))
 #d8.place(x=, y=)
 
 
 # The E's
 e5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="e5", old_coordinate=[300, 400]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="e5", old_coordinate=[300, 400]))
 e5.place(x=400, y=300)
 e6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="e6", old_coordinate=[200, 400]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="e6", old_coordinate=[200, 400]))
 e6.place(x=400, y=200)
 e7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="e7", old_coordinate=[100, 40]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="e7", old_coordinate=[100, 40]))
 #e7.place(x=, y=)
 e8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="e8", old_coordinate=[0, 400]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="e8", old_coordinate=[0, 400]))
 #e8.place(x=, y=)
 
 
 # The F's
 f5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="f5", old_coordinate=[300, 500]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="f5", old_coordinate=[300, 500]))
 f5.place(x=500, y=300)
 f6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="f6", old_coordinate=[200, 500]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="f6", old_coordinate=[200, 500]))
 f6.place(x=500, y=200)
 f7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="f7", old_coordinate=[100, 500]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="f7", old_coordinate=[100, 500]))
 #f7.place(x=, y=)
 f8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="f8", old_coordinate=[0, 500]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="f8", old_coordinate=[0, 500]))
 #f8.place(x=, y=)
 
 
 # The G's
 g5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="g5", old_coordinate=[300, 600]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="g5", old_coordinate=[300, 600]))
 g5.place(x=600, y=300)
 g6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="g6", old_coordinate=[200, 600]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="g6", old_coordinate=[200, 600]))
 g6.place(x=600, y=200)
 g7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="g7", old_coordinate=[100, 600]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="g7", old_coordinate=[100, 600]))
 #g7.place(x=, y=)
 g8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="g8", old_coordinate=[0, 600]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="g8", old_coordinate=[0, 600]))
 #g8.place(x=, y=)
 
 
 # The H's
 h5 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="h5", old_coordinate=[300, 700]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="h5", old_coordinate=[300, 700]))
 h5.place(x=700, y=300)
 h6 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="h6", old_coordinate=[200, 700]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="h6", old_coordinate=[200, 700]))
 h6.place(x=700, y=200)
 h7 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="h7", old_coordinate=[100, 700]))
+               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="h7", old_coordinate=[100, 700]))
 #h7.place(x=, y=)
 h8 = tk.Button(root, borderwidth=0, highlightthickness=0, width=8,
-               height=6, fg=dark_color, bg=dark_color, command=lambda: Square(coordinate="h8", old_coordinate=[0, 700]))
+               height=6, fg=light_color, bg=light_color, command=lambda: Square(coordinate="h8", old_coordinate=[0, 700]))
 #h8.place(x=, y=)
 
 
