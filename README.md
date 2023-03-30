@@ -1,1 +1,1 @@
-# Hopefully this thing works
+#GUI is main part of code
