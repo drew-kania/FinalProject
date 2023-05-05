@@ -1,5 +1,0 @@
-What we need MINIMUM
-1. We need to make a move validation system that confirms if a move is legal 
-    and updates the board accordingly
-2. We need to handle special moves like castles, promotion, and en passant
-3. Win conditions for checkmate, stalemate, and a draw
